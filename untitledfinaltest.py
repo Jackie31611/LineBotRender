@@ -25,7 +25,7 @@ import os
 line_bot_api = LineBotApi(os.getenv('Channel_Access_Token'))
 handler = WebhookHandler(os.getenv('Channel_Secret'))
 # 請替換為你的實際資料
-baseurl = 'https://86e4-2001-b400-e353-3426-60df-c388-b541-d187.ngrok-free.app/static/'  # 靜態檔案網址
+baseurl = 'https://linebotrender-yniu.onrender.com/static/'  # 靜態檔案網址
 
 @app.route("/callback", methods=['POST'])
 def callback():
